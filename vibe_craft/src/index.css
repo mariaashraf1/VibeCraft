@@ -2,11 +2,31 @@
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
 
+/* Custom Font Classes */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-inter-light {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.font-inter-bold {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.font-inter-black {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
 
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
