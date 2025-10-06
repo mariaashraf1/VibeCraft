@@ -6,7 +6,7 @@ import Login from './pages/Login'
 import SignUp from './pages/SignUp'
 import MoodHistory from './pages/MoodHistory'
 import About from './pages/About'
-
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
       <Route path="/mood-history" element={<MoodHistory />} />
       <Route path="/about" element={<About />} />
      </Routes>
+     <Footer />
     </>
   )
 }
