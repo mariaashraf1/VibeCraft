@@ -1,0 +1,95 @@
+[
+    {
+      "name": "Journaling",
+      "description": "A soothing habit for reflection and emotional expression through writing.",
+      "image": "https://skyryedesign.com/wp-content/uploads/2024/11/Journal-_.jpeg",
+      "moods": [
+        { "name": "Calm" },
+        { "name": "Sad" },
+        { "name": "Reflective" },
+        { "name": "Anxious" }
+      ]
+    },
+    {
+      "name": "Knitting",
+      "description": "A cozy, mindful craft that relaxes the mind through rhythmic stitching.",
+      "image": "https://blog.weareknitters.com/wp-content/uploads/2024/10/the-wool-orange-sorbet-lifestyle-1-web.jpg",
+      "moods": [
+        { "name": "Calm" },
+        { "name": "Stressed" },
+        { "name": "Peaceful" }
+      ]
+    },
+    {
+      "name": "Painting",
+      "description": "An expressive art form that channels creativity and emotion through color.",
+      "image": "https://c3a-mobileapp-s3-prod.s3.ap-southeast-1.amazonaws.com/s3fs-public/tagging_images/fc_Acrylic.png",
+      "moods": [
+        { "name": "Creative" },
+        { "name": "Happy" },
+        { "name": "Inspired" },
+        { "name": "Reflective" }
+      ]
+    },
+    {
+      "name": "Pottery",
+      "description": "A tactile and grounding art of shaping clay into beautiful, personal forms.",
+      "image": "https://cdn.shopify.com/s/files/1/0836/2769/files/pottery-making-on-a-wheel_600x600.jpg?v=1715828418",
+      "moods": [
+        { "name": "Focused" },
+        { "name": "Calm" },
+        { "name": "Inspired" }
+      ]
+    },
+    {
+      "name": "Crochet",
+      "description": "A relaxing craft of looping yarn into creative patterns and cozy projects.",
+      "image": "https://i.etsystatic.com/46685488/r/il/27ca9e/5354630541/il_570xN.5354630541_hacm.jpg",
+      "moods": [
+        { "name": "Relaxed" },
+        { "name": "Peaceful" },
+        { "name": "Productive" }
+      ]
+    },
+    {
+      "name": "Gardening",
+      "description": "A nature-centered hobby that nurtures calmness and positivity.",
+      "image": "https://media.greenmatters.com/brand-img/po_nRP3N3/0x0/flower-gardening-1666054965738.jpg",
+      "moods": [
+        { "name": "Calm" },
+        { "name": "Happy" },
+        { "name": "Grounded" }
+      ]
+    },
+    {
+      "name": "Scrapbooking",
+      "description": "A joyful and creative way to preserve memories and stories through design.",
+      "image": "https://static01.nyt.com/images/2020/08/06/fashion/21scrapbooking5/21scrapbooking5-mediumSquareAt3X.jpg",
+      "moods": [
+        { "name": "Reflective" },
+        { "name": "Creative" },
+        { "name": "Joyful" }
+      ]
+    },
+    {
+      "name": "Origami",
+      "description": "The peaceful Japanese art of folding paper into expressive shapes.",
+      "image": "https://discountartncraftwarehouse.com.au/dac/assets/media/Blog/Origami-Image.jpg",
+      "moods": [
+        { "name": "Calm" },
+        { "name": "Focused" },
+        { "name": "Creative" }
+      ]
+    },
+    {
+      "name": "Cooking",
+      "description": "A sensory, fulfilling activity that sparks joy and creativity in the kitchen.",
+      "image": "https://www.health.com/thmb/wfkIOj5dW5H6QLhXqEFHw87ow08=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Health-GettyImages-1477430966-506a007e48744d5488a6ee1c0b729134.jpg",
+      "moods": [
+        { "name": "Happy" },
+        { "name": "Inspired" },
+        { "name": "Productive" }
+      ]
+    }
+  ]
+  
