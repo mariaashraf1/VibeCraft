@@ -1,8 +1,12 @@
 import exprss from 'express';
 import hobbyRoutes from './routes/hobbyRoutes.js';
+import cors from "cors";
+
 
 
 const app = exprss();
+app.use(cors());
+
 app.use(exprss.json()); 
 
 app.use('/api/hobbies', hobbyRoutes);
