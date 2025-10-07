@@ -20,11 +20,11 @@ export default function FeaturesPreview() {
   ];
 
   return (
-    <div className="mt-20 text-center px-6 md:px-16 lg:px-24 ">
-      <h2 className="text-3xl md:text-4xl font-semibold text-[#FDF8F3] mb-6">
+    <div className="mt-20 text-center px-6 md:px-16 lg:px-24  mb-10">
+      <h1 className="text-4xl font-outfit-semibold text-[#FDF8F3] mb-6">
         What You Can Do with VibeCraft
-      </h2>
-      <p className="text-[#C0C0C0] mb-12 text-lg">
+      </h1>
+      <p className="text-[#C0C0C0] font-outift mb-12 text-lg">
       VibeCraft transforms your emotions into action. Whether you feel calm, sad, or inspired — it connects you to matching music, creative hobbies, and visuals that reflect your inner mood.
       </p>
 

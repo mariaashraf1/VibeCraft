@@ -1,14 +1,8 @@
 import girl6 from "../assets/girl6.png";
-import { useEffect } from "react";
-import { useHobbyStore } from "../stores/HobbyStore";
+import HobbySection from "../components/HobbySection";
 import FeaturesPreview from "../components/FeaturesPreview";
 import  MusicSection from "../components/MusicSection";
 export default function HomePage() {
-  const { hobbies, fetchHobbies, loading, error } = useHobbyStore();
-  useEffect(() => {
-    fetchHobbies();
-  }, [fetchHobbies]);
-
   return (
     <div className="flex flex-col items-center justify-center">
       {/* start of main container */}
@@ -46,32 +40,7 @@ export default function HomePage() {
             </div>
           </div>
           <FeaturesPreview />
-          <h1 className="text-3xl font-outfit-semibold mt-20 text-[#FDF8F3]">
-          Match your mood with creative hobbies and crafts.
-          </h1>
-
-          <div className="flex items-start justify-start space-x-10 mt-10  overflow-x-auto no-scrollbar">
-            {loading && <p>Loading...</p>}
-            {error && <p>Error: {error}</p>}
-            {!loading &&
-              !error &&
-              hobbies.map((item) => (
-                <div key={item.id} className="mb-4 flex-shrink-0">
-                  {/* Image wrapper */}
-                  <div className="rounded-2xl overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt="home1"
-                      className="w-[220px] h-[220px] object-cover transition-transform duration-300 hover:scale-120"
-                    />
-                  </div>
-                  <h3 className="text-xl font-outfit-semibold mt-6 text-[#FDF8F3]">
-                    {item.name}
-                  </h3>
-                </div>
-              ))}
-          </div>
-          
+          <HobbySection/>
           <MusicSection />
           
          
