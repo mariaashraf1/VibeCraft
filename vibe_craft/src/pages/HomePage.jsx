@@ -1,8 +1,8 @@
-import home2 from "../assets/home2.png";
-import home1 from "../assets/home1.png";
 import girl6 from "../assets/girl6.png";
 import { useEffect } from "react";
 import { useHobbyStore } from "../stores/HobbyStore";
+import FeaturesPreview from "../components/FeaturesPreview";
+import  MusicSection from "../components/MusicSection";
 export default function HomePage() {
   const { hobbies, fetchHobbies, loading, error } = useHobbyStore();
   useEffect(() => {
@@ -12,8 +12,8 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center">
       {/* start of main container */}
-      <div className=" w-[95%] mt-20 mx-6 bg-[#2C2C3C] rounded-lg min-h-screen overflow-auto shadow-lg">
-        <div className="flex flex-col ml-20">
+      <div className=" w-[95%] mt-20 mx-6 bg-[#2C2C3C] rounded-lg min-h-screen shadow-lg">
+        <div className="flex flex-col ml-20 mr-20 no-scrollbar">
           {/* start of  main col */}
           <div className="flex items-center justify-between mt-20 ">
             {" "}
@@ -21,16 +21,16 @@ export default function HomePage() {
             <div className="flex flex-col ">
               <div className="flex flex-col items-start justify-center  mt-10 ">
                 {/* start of text */}
-                <h1 className="text-5xl font-bold italic ">
+                <h1 className="text-6xl font-outfit-bold italic text-[#FDF8F3]">
                   Connect Your Mood with
                 </h1>
-                <h1 className="text-5xl font-semibold italic mt-6">
+                <h1 className="text-6xl font-outfit-semibold italic mt-6 text-[#FDF8F3]">
                   Art & Music!
                 </h1>
               </div>
-              <div className="flex flex-col items-start justify-start   mt-30 mr-60 ">
-                <h3 className="text-xl  ">Describe Your Mood to get started</h3>
-                <button className="w-full bg-[#7A9CAB] text-white font-semibold py-2 rounded-full mt-10  hover:bg-[#6a8f9b] transition">
+              <div className="flex flex-col items-start justify-start   mt-30 mr-90 ">
+                <h3 className="text-xl font-outfit text-[#FDF8F3]">Describe Your Mood to get started</h3>
+                <button className="w-full bg-[#7A9CAB] text-white font-outfit-semibold py-2 rounded-full mt-10  hover:bg-[#6a8f9b] hoover:border-color:[#3A3A4A] transition">
                   Get Started
                 </button>
               </div>
@@ -45,29 +45,39 @@ export default function HomePage() {
               />
             </div>
           </div>
-          <h1 className="text-2xl font-semibold italic mt-6">
-            Explore Hobbies and Crafts to craft your mood
+          <FeaturesPreview />
+          <h1 className="text-3xl font-outfit-semibold mt-20 text-[#FDF8F3]">
+          Match your mood with creative hobbies and crafts.
           </h1>
 
-          <div className="flex items-start justify-start space-x-20 mt-10 mr-15 overflow-x-auto no-scrollbar">
+          <div className="flex items-start justify-start space-x-10 mt-10  overflow-x-auto no-scrollbar">
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error}</p>}
             {!loading &&
               !error &&
               hobbies.map((item) => (
                 <div key={item.id} className="mb-4 flex-shrink-0">
-                  <img
-                    src={item.image}
-                    alt="home1"
-                    className="w-[200px] h-[200px] object-cover rounded-2xl"
-                  />
-                  <h3 className="text-xl font-semibold italic mt-3 text-center">
+                  {/* Image wrapper */}
+                  <div className="rounded-2xl overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt="home1"
+                      className="w-[220px] h-[220px] object-cover transition-transform duration-300 hover:scale-120"
+                    />
+                  </div>
+                  <h3 className="text-xl font-outfit-semibold mt-6 text-[#FDF8F3]">
                     {item.name}
                   </h3>
                 </div>
               ))}
           </div>
+          
+          <MusicSection />
+          
+         
+
         </div>
+        
       </div>
     </div>
   );
