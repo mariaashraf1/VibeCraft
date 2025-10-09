@@ -1,4 +1,4 @@
-## 🎵 VibeCraft
+## <img src="vibe_craft\src\assets\logo2.png" alt="VibeCraft Logo" width="200"  /> 
 
 **Transform your mood into music, art, and creativity.**
 
