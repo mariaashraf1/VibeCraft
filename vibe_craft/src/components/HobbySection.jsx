@@ -29,6 +29,10 @@ export default function HobbySection() {
                   <h3 className="text-xl font-outfit-semibold mt-6 text-[#FDF8F3]">
                     {item.name}
                   </h3>
+                  <h4 className="text-md font-outfit mt-2 text-[#C0C0C0]">
+                    {item.moods && item.moods.length>0
+                    ?item.moods.map((moodItem)=> moodItem.name).join(", "):"'No moods available"}
+                  </h4>
                 </div>
               ))}
           </div>

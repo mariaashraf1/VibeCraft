@@ -10,7 +10,6 @@ export default function HomePage() {
         <div className="flex flex-col ml-20 mr-20 no-scrollbar">
           {/* start of  main col */}
           <div className="flex items-center justify-between mt-20 ">
-            {" "}
             {/* start of row of pic and text */}
             <div className="flex flex-col ">
               <div className="flex flex-col items-start justify-center  mt-10 ">

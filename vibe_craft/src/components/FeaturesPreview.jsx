@@ -20,7 +20,7 @@ export default function FeaturesPreview() {
   ];
 
   return (
-    <div className="mt-20 text-center px-6 md:px-16 lg:px-24  mb-10">
+    <div className="mt-30 text-center px-6 md:px-16 lg:px-24  mb-10">
       <h1 className="text-4xl font-outfit-semibold text-[#FDF8F3] mb-6">
         What You Can Do with VibeCraft
       </h1>
