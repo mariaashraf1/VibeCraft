@@ -7,7 +7,7 @@ export default function NavBar() {
   const isActive = (path) => location.pathname === path;
   
   return (
-      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-12 py-6 text-lg font-semibold bg-gradient-to-r from-[#2C2C3C] via-[#2C2C3C] to-[#7A9CAB] backdrop-blur-lg bg-opacity-90 shadow-lg rounded-b-2xl h-16">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-12 py-6 text-xl font-outfit-semibold bg-gradient-to-r from-[#2C2C3C] via-[#2C2C3C] to-[#7A9CAB] backdrop-blur-lg bg-opacity-90 shadow-lg rounded-b-2xl h-16">
         <Link to="/" className="flex items-center space-x-3">
           <img
             src={logo2}

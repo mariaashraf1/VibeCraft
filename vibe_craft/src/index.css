@@ -22,6 +22,41 @@
   font-weight: 900;
 }
 
+/* Outfit Font Classes for Headings */
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-outfit-light {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+}
+
+.font-outfit-medium {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+}
+
+.font-outfit-semibold {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+
+.font-outfit-bold {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+}
+
+.font-outfit-extrabold {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+}
+
+.font-outfit-black {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+}
+
 
 
 
@@ -76,7 +111,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: inherit;
 }
 button:focus,
 button:focus-visible {
