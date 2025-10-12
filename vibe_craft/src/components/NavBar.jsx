@@ -42,12 +42,12 @@ export default function NavBar() {
              SignUp
            </Link>
            <Link
-             to="/mood-history"
+             to="/Profile"
              className={`hover:underline hover:underline-offset-4 hover:decoration-[#2C2C3C] transition-colors ${
-               isActive('/mood-history') ? 'text-[#2C2C3C] underline underline-offset-4 decoration-[#2C2C3C]' : 'text-[#FDF8F3] hover:text-[#2C2C3C]'
+               isActive('/Profile') ? 'text-[#2C2C3C] underline underline-offset-4 decoration-[#2C2C3C]' : 'text-[#FDF8F3] hover:text-[#2C2C3C]'
              }`}
            >
-             Mood History
+             Profile
            </Link>
            <Link
              to="/about"

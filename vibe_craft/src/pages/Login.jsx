@@ -31,7 +31,7 @@ export default function Login() {
                      {showPassword ? <FaEye size={18} /> : <FaEyeSlash size={18} />}
                    </button>
                  </div>
-                <button type="submit" className="w-[50%] bg-[#7A9CAB] text-white font-outfit-semibold py-3 rounded-full  hover:bg-[#6a8f9b] hoover:border-color:[#3A3A4A] transition ">Login</button>
+                <button type="submit" className="w-[50%] bg-[#7A9CAB] text-white text-xl font-outfit-semibold py-3 rounded-full  hover:bg-[#6a8f9b] hoover:border-color:[#3A3A4A] transition ">Login</button>
             </form>
       </div>
     </div>
