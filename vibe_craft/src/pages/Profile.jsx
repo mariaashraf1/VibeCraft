@@ -24,7 +24,75 @@ export default function profile() {
       </div>
       <div className=" w-[100%] mt-6 bg-[#2C2C3C] rounded-lg min-h-screen shadow-lg">
         <div className="grid grid-cols-[1fr_2fr] gap-4">
-          <div className="bg-gray-500 p-4 rounded">1fr Column</div>
+          <div className="flex flex-col mt-8 ml-10 mr-10">
+              <div className="ml-3">
+                <div className="text-2xl font-outfit-bold italic mb-1 text-[#FDF8F3]">✨ About Me</div>
+                <div className="mt-2 flex flex-col space-y-2">
+                  <div className="text-xl font-outfit italic ml-2 text-[#FDF8F3]">
+                    🎂 Age: 23 years old
+                  </div>
+                  <div className="text-xl font-outfit italic ml-2 text-[#FDF8F3]">
+                    📍 Location: New York, USA
+                  </div>
+                  <div className="text-xl font-outfit italic ml-2 text-[#FDF8F3]">
+                    💼 Occupation: Graphic Designer
+                  </div>
+                  <div className="text-xl font-outfit italic ml-2 text-[#FDF8F3]">
+                    📝 Bio: Passionate about art, music, and exploring new places.
+                  </div>
+                </div>
+                <div className="text-2xl font-outfit-bold mt-8 mb-4 text-[#FDF8F3]">✨ Personal Interests</div>
+
+                <div className="mt-4 p-3 bg-[#1E1E2E] rounded-lg shadow-xl">
+                  <div className="text-xl font-outfit-bold mb-1 text-[#FDF8F3]">📍 Favorite Places</div>
+                  <div className="text-lg font-outfit-regular text-[#FDF8F3]">
+                    Cafes, Art Galleries, Nature Trails
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 bg-[#1E1E2E] rounded-lg shadow-xl">
+                  <div className="text-xl font-outfit-bold mb-1 text-[#FDF8F3]">📚 Favorite Books</div>
+                  <div className="text-lg font-outfit-regular text-[#FDF8F3]">
+                    "The Alchemist", "1984", "Sapiens"
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 bg-[#1E1E2E] rounded-lg shadow-xl">
+                  <div className="text-xl font-outfit-bold mb-1 text-[#FDF8F3]">🎬 Favorite Movies</div>
+                  <div className="text-lg font-outfit-regular text-[#FDF8F3]">
+                    "Interstellar", "Spirited Away", "Pulp Fiction"
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 bg-[#1E1E2E] rounded-lg shadow-xl">
+                  <div className="text-xl font-outfit-bold mb-1 text-[#FDF8F3]">🎨 Hobbies</div>
+                  <div className="text-lg font-outfit-regular text-[#FDF8F3]">
+                    Photography, Hiking, Playing Guitar
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 bg-[#1E1E2E] rounded-lg shadow-xl">
+                  <div className="text-xl font-outfit-bold mb-1 text-[#FDF8F3]">🎶 Favorite Music Genres</div>
+                  <div className="text-lg font-outfit-regular text-[#FDF8F3]">
+                    Indie Pop, Lo-fi Hip Hop, Classical
+                  </div>
+                </div>
+
+                <div className="mt-4 p-3 bg-[#1E1E2E] rounded-lg shadow-xl mb-8">
+                  <div className="text-xl font-outfit-bold mb-1 text-[#FDF8F3]">🍔 Favorite Foods</div>
+                  <div className="text-lg font-outfit-regular text-[#FDF8F3]">
+                    Sushi, Pasta, Tacos
+                  </div>
+                </div>
+              </div>
+          
+            
+            
+            
+            
+            
+            
+            </div>
           <div className="flex flex-col mt-8 ml-10 mr-10">
             <div className="flex items-start ">
                 <img src={pp} alt="User Avatar" className="w-15 h-15 rounded-full object-cover border-2 border-[#3A3A4A] shadow-md"/>
