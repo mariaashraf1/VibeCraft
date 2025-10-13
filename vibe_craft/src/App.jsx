@@ -4,7 +4,7 @@ import NavBar from './components/NavBar'
 import HomePage from './pages/HomePage'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
-import MoodHistory from './pages/MoodHistory'
+import Profile from './pages/Profile'
 import About from './pages/About'
 import Footer from './components/Footer'
 
@@ -17,7 +17,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
-      <Route path="/mood-history" element={<MoodHistory />} />
+      <Route path="/Profile" element={<Profile />} />
       <Route path="/about" element={<About />} />
      </Routes>
      <Footer />
