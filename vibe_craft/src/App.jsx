@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import './App.css'
 import NavBar from './components/NavBar'
-import HomePage from './pages/HomePage'
+import HomePage from './pages/homepage/HomePage'
 import Login from './pages/Login'
 import SignUp from './pages/SignUp'
-import Profile from './pages/Profile'
+import Profile from './pages/profilePage/Profile'
 import About from './pages/About'
 import Footer from './components/Footer'
 

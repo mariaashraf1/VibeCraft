@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useHobbyStore } from "../stores/HobbyStore";
+import { useHobbyStore } from "../../../stores/HobbyStore";
 export default function HobbySection() {
     const { hobbies, fetchHobbies, loading, error } = useHobbyStore();
     useEffect(() => {

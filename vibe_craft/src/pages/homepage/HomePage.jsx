@@ -1,7 +1,7 @@
-import girl6 from "../assets/girl6.png";
-import HobbySection from "../components/HobbySection";
-import FeaturesPreview from "../components/FeaturesPreview";
-import  MusicSection from "../components/MusicSection";
+import girl6 from "../../assets/girl6.png";
+import HobbySection from "./components/HobbySection";
+import FeaturesPreview from "./components/FeaturesPreview";
+import  MusicSection from "./components/MusicSection";
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center">

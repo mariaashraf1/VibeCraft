@@ -1,0 +1,85 @@
+export default function UserInfo() {
+  const Interstes = [
+    {
+      title: "📍 Favorite Places",
+      content: "Cafes, Art Galleries, Nature Trails",
+    },
+    {
+      title: "📚 Favorite Books",
+      content: `"The Alchemist", "1984", "Sapiens"`,
+    },
+    {
+      title: "🎬 Favorite Movies",
+      content: `"Interstellar", "Spirited Away", "Pulp Fiction"`,
+    },
+    {
+      title: "🎨 Hobbies",
+      content: "Photography, Hiking, Playing Guitar",
+    },
+    {
+      title: "🎶 Favorite Music Genres",
+      content: "Indie Pop, Lo-fi Hip Hop, Classical",
+    },
+    {
+      title: "🍔 Favorite Foods",
+      content: "Sushi, Pasta, Tacos",
+    },
+  ];
+  return (
+    <div className="flex flex-col mt-10 mx-8">
+      {/* About Me Section */}
+      <div className="relative bg-[#1E1E2E]/70 border border-white/10 p-8 rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.2)] backdrop-blur-sm">
+        <h2 className="text-3xl font-outfit-bold italic mb-4 flex items-center gap-2">
+          ✨ About Me
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-y-3 text-lg leading-relaxed">
+          <p>
+            🎂 <span className="font-semibold text-[#F2EAD3]">Age:</span> 23
+            years old
+          </p>
+          <p>
+            📍 <span className="font-semibold text-[#F2EAD3]">Location:</span>{" "}
+            New York
+          </p>
+          <p>
+            💼 <span className="font-semibold text-[#F2EAD3]">Occupation:</span>{" "}
+            Graphic Designer
+          </p>
+          <p className="sm:col-span-1">
+            📝 <span className="font-semibold text-[#F2EAD3]">Bio:</span>{" "}
+            Passionate about art, music, and exploring new places.
+          </p>
+        </div>
+
+        {/* Soft Accent Glow */}
+        <div className="absolute -top-12 -right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 via-purple-400/20 to-blue-400/20 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Divider Line */}
+      <div className="mt-10 mb-6 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+
+      {/* Personal Interests Header */}
+      <h2 className="text-3xl font-outfit-bold italic mt-10 mb-4 text-[#FDF8F3] text-center">
+        ✨ Personal Interests
+      </h2>
+
+      {/* Interest Cards Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {Interstes.map((item, index) => (
+          <div
+            key={index}
+            className="p-5 rounded-2xl bg-gradient-to-br from-[#1E1E2E] to-[#2E2E3E] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5"
+          >
+            <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
+              {item.title}
+            </div>
+            <div className="text-lg font-outfit text-[#EAE7DC]">
+              {item.content}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
