@@ -1,0 +1,28 @@
+import { useTabs } from "../../../context/TabsContext";
+
+export default function Tabs({tabs}) {
+  const { activeTab, setActiveTab } = useTabs();
+
+
+    return(
+        <div className="w-full flex border-b border-[#3A3A4A] items-start mt-8 pl-3 ">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`relative py-3 text-xl font-medium bg-transparent border-none outline-none focus:outline-none active:outline-none ring-0 hover:ring-0 transition-colors duration-200 ${
+              activeTab === tab
+                ? "text-[#8fb3c0] hover:outline-none outline-none"
+                : "hover:text-gray-300 hover:outline-none"
+            }`}
+          >
+            {tab}
+            {activeTab === tab && (
+              <span className="absolute left-0 right-0 -bottom-[1px] mx-auto h-[2px] w-10 bg-[#8fb3c0] rounded-full transition-all duration-300"></span>
+            )}
+          </button>
+        ))}
+      </div>
+
+    );
+}

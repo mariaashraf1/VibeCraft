@@ -26,7 +26,7 @@ export default function UserInfo() {
     },
   ];
   return (
-    <div className="flex flex-col mt-10 mx-8">
+    <div className="flex flex-col mt-5 mx-8 py-6">
       {/* About Me Section */}
       <div className="relative bg-[#1E1E2E]/70 border border-white/10 p-8 rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.2)] backdrop-blur-sm">
         <h2 className="text-3xl font-outfit-bold italic mb-4 flex items-center gap-2">
