@@ -1,6 +1,8 @@
 import pp from "../../../assets/pp.png";
 import ThoughtsCard from "./ThoughtsCard";
 import ButtonsAndGallery from "./ButtonsAndGallery";
+import Modal from "../../../components/Modal";
+import PostComposer from "./PostComposer";
 export default function ThoughtsSection() {
 
   const thoughts = [
@@ -23,12 +25,7 @@ export default function ThoughtsSection() {
             alt="User Avatar"
             className="w-15 h-15 rounded-full object-cover border-2 border-[#3A3A4A] shadow-md"
           />
-          <input
-            type="text"
-            name="diary"
-            placeholder="What's on your mind, Maria?"
-            className="bg-[#1E1E2E] w-full p-3 ml-2 mt-2 rounded-4xl shadow-md focus:shadow-lg focus:shadow-[#8FB3C0]/50 outline-none transition text-[#FDF8F3]"
-          />
+          <PostComposer/>
         </div>
         <div className="text-2xl font-outfit-bold text-[#FDF8F3] mt-10 mb-5">
           Your Thoughts
