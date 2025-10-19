@@ -1,6 +1,9 @@
 import girl2 from "../../../assets/girl2.png";
-export default function ButtonsAndGallery({activeTab, setActiveTab}) {
+import { useTabs } from "../../../context/TabsContext";
 
+export default function ButtonsAndGallery() {
+
+const { activeTab, setActiveTab } = useTabs();
     return(
       
       <div className="flex flex-col mt-8 ml-10 mr-10">

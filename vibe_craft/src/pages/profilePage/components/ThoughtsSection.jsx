@@ -1,7 +1,7 @@
 import pp from "../../../assets/pp.png";
 import ThoughtsCard from "./ThoughtsCard";
 import ButtonsAndGallery from "./ButtonsAndGallery";
-export default function ThoughtsSection({activeTab, setActiveTab}) {
+export default function ThoughtsSection() {
 
   const thoughts = [
     {
@@ -15,7 +15,7 @@ export default function ThoughtsSection({activeTab, setActiveTab}) {
   ];
   return (
     <div className="grid grid-cols-[1.2fr_2fr] gap-1">
-      <ButtonsAndGallery activeTab={activeTab} setActiveTab={setActiveTab} />
+      <ButtonsAndGallery />
       <div className="flex flex-col mt-8 ml-10 mr-10">
         <div className="flex items-start ">
           <img

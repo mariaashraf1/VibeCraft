@@ -1,4 +1,8 @@
-export default function Tabs({tabs, activeTab, setActiveTab}) {
+import { useTabs } from "../../../context/TabsContext";
+
+export default function Tabs({tabs}) {
+  const { activeTab, setActiveTab } = useTabs();
+
 
     return(
         <div className="w-full flex border-b border-[#3A3A4A] items-start mt-8 pl-3 ">
