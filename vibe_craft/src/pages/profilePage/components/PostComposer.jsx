@@ -1,9 +1,11 @@
 import { useState } from "react";
 import TextareaAutosize from "react-textarea-autosize";
+import { useThoughtsStore } from "../../../stores/ThoughtsStore";
+
 export default function PostComposer() {
   const [isOpen, setIsOpen] = useState(false);
   const [post, setPost] = useState("");
-
+  const addThought = useThoughtsStore((state) => state.addThought);
   return (
     <div className="flex flex-col items-center justify-center w-full">
       
@@ -42,7 +44,7 @@ export default function PostComposer() {
             <div className="flex justify-end mt-4">
               <button
                 onClick={() => {
-                  console.log("Post:", post);
+                  addThought(post);
                   setPost("");
                   setIsOpen(false);
                 }}

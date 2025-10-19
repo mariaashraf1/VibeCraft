@@ -1,20 +1,12 @@
 import pp from "../../../assets/pp.png";
 import ThoughtsCard from "./ThoughtsCard";
 import ButtonsAndGallery from "./ButtonsAndGallery";
-import Modal from "../../../components/Modal";
 import PostComposer from "./PostComposer";
+import { useThoughtsStore } from "../../../stores/ThoughtsStore";
+
 export default function ThoughtsSection() {
 
-  const thoughts = [
-    {
-      idea: "Just had an amazing workout session! Feeling energized and ready to take on the day. 💪✨ #FitnessGoals #HealthyLiving",
-      time: "2 hours ago",
-    },
-    {
-      idea: "Just had an amazing workout session! Feeling energized and ready to take on the day. 💪✨ #FitnessGoals #HealthyLiving",
-      time: "3 hours ago",
-    },
-  ];
+  const thoughts = useThoughtsStore((state) => state.thoughts);
   return (
     <div className="grid grid-cols-[1.2fr_2fr] gap-1">
       <ButtonsAndGallery />
@@ -27,12 +19,14 @@ export default function ThoughtsSection() {
           />
           <PostComposer/>
         </div>
-        <div className="text-2xl font-outfit-bold text-[#FDF8F3] mt-10 mb-5">
+        <div className="text-2xl font-outfit-bold text-[#FDF8F3] mt-10 mb-5 ">
           Your Thoughts
         </div>
+        <div className="overflow-y-auto max-h-[750px] no-scrollbar">
         {thoughts.map((thought, index) => (
           <ThoughtsCard key={index} thought={thought} />
         ))}
+        </div>
       </div>
     </div>
   );
