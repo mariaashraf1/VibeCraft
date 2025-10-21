@@ -10,7 +10,7 @@ export default function ThoughtsSection() {
   return (
     <div className="grid grid-cols-[1.2fr_2fr] gap-1">
       <ButtonsAndGallery />
-      <div className="flex flex-col mt-8 ml-10 mr-10">
+      <div className="flex flex-col mt-8  mr-10">
         <div className="flex items-start ">
           <img
             src={pp}

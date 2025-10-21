@@ -6,7 +6,17 @@ export default function ButtonsAndGallery() {
 const { activeTab, setActiveTab } = useTabs();
     return(
       
-      <div className="flex flex-col mt-8 ml-10 mr-10">
+      <div className="flex flex-col mt-8 ml-10 mr-20">
+        <div className="px-8 bg-[#1E1E2E] rounded-2xl shadow-xl mb-16 py-5">
+        <div className="flex flex-col justify-center items-center mt-5 mb-5">
+          <button className="w-full rounded-full bg-[#7A9CAB] text-[#FDF8F3] mb-10">
+          Lets Generate Art And Music for You
+          </button>
+          <button className="w-full rounded-full bg-[#7A9CAB] text-[#FDF8F3] ">
+            Add Intersets 
+          </button>
+        </div>
+      </div>
       <div className="px-8 bg-[#1E1E2E] rounded-2xl shadow-xl mb-4 mt-2">
         <div className="text-[#FDF8F3] font-outfit-bold text-xl pt-5 mb-3">
           Gallery
@@ -36,11 +46,6 @@ const { activeTab, setActiveTab } = useTabs();
           Show More
         </button>
       </div>
-      {/* <div className="flex flex-col justify-center items-center mt-30">
-          <button className=" w-[400px] rounded-full bg-[#7A9CAB] text-[#FDF8F3] text-xl ">
-          Lets Generate Art And Music 
-          </button>
-      </div> */}
     </div>
     );
 }
