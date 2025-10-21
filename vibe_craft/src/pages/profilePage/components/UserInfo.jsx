@@ -1,4 +1,7 @@
+import { useUserStore } from "../../../stores/User";
 export default function UserInfo() {
+  const user = useUserStore((state) => state.user);
+
   const Interstes = [
     {
       title: "📍 Favorite Places",
@@ -35,20 +38,20 @@ export default function UserInfo() {
 
         <div className="grid grid-cols-1 sm:grid-cols-1 gap-y-3 text-lg leading-relaxed">
           <p>
-            🎂 <span className="font-semibold text-[#F2EAD3]">Age:</span> 23
-            years old
+            🎂 <span className="font-semibold text-[#F2EAD3]">Age:</span>{" "}
+            {user.age}
           </p>
           <p>
             📍 <span className="font-semibold text-[#F2EAD3]">Location:</span>{" "}
-            New York
+            {user.location}
           </p>
           <p>
-            💼 <span className="font-semibold text-[#F2EAD3]">Occupation:</span>{" "}
-            Graphic Designer
+            💼 <span className="font-semibold text-[#F2EAD3]">Job:</span>{" "}
+            {user.job}
           </p>
           <p className="sm:col-span-1">
             📝 <span className="font-semibold text-[#F2EAD3]">Bio:</span>{" "}
-            Passionate about art, music, and exploring new places.
+            {user.bio}
           </p>
         </div>
 
