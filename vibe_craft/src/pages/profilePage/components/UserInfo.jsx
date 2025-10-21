@@ -62,16 +62,16 @@ export default function UserInfo() {
 
           {/* Interest Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {Interstes.map((item, index) => (
+            {user.music.map((item, index) => (
               <div
                 key={index}
                 className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5"
               >
                 <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
-                  {item.title}
+                  music
                 </div>
                 <div className="text-lg font-outfit text-[#EAE7DC]">
-                  {item.content}
+                  {item}
                 </div>
               </div>
             ))}

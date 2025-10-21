@@ -7,24 +7,30 @@ export const useUserStore = create((set) => ({
         location: "",
         job: "",
         bio: "",
-        favplaces: [],
-        favmusic: [],
-        favmovies: [],
-        favfood: [],
+        places: [],
+        music: [],
+        movies: [],
+        food: [],
         hobbies: [],
-        favbooks: [],
+        books: [],
       
     },
     setUser:(userData)=>{
         set({user:{...userData}});
     },
-    updateUserField:(field, value)=>{
-        set((state)=>({
-            user:{
-                ...state.user,
-                [field]:value
-            }
-        }))
-    },
+    updateUserField: (field, value) => {
+        set((state) => {
+          const currentValue = state.user[field];
+          return {
+            user: {
+              ...state.user,
+              [field]: Array.isArray(currentValue)
+                ? [...currentValue, value] 
+                : value, 
+            },
+          };
+        });
+      },
+      
 
 }));
