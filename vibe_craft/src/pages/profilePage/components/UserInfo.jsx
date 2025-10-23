@@ -2,32 +2,6 @@ import { useUserStore } from "../../../stores/User";
 export default function UserInfo() {
   const user = useUserStore((state) => state.user);
 
-  const Interstes = [
-    {
-      title: "📍 Favorite Places",
-      content: "Cafes, Art Galleries, Nature Trails",
-    },
-    {
-      title: "📚 Favorite Books",
-      content: `"The Alchemist", "1984", "Sapiens"`,
-    },
-    {
-      title: "🎬 Favorite Movies",
-      content: `"Interstellar", "Spirited Away", "Pulp Fiction"`,
-    },
-    {
-      title: "🎨 Hobbies",
-      content: "Photography, Hiking, Playing Guitar",
-    },
-    {
-      title: "🎶 Favorite Music Genres",
-      content: "Indie Pop, Lo-fi Hip Hop, Classical",
-    },
-    {
-      title: "🍔 Favorite Foods",
-      content: "Sushi, Pasta, Tacos",
-    },
-  ];
   return (
     <div className="flex flex-col mt-5 mx-8 py-6">
       {/* About Me Section */}
@@ -62,27 +36,72 @@ export default function UserInfo() {
 
           {/* Interest Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {user.music.map((item, index) => (
-              <div
-                key={index}
-                className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5"
-              >
+            {user.music.length > 0 && (
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5">
                 <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
-                  music
+                  🎶 Favorite Music
                 </div>
-                <div className="text-lg font-outfit text-[#EAE7DC]">
-                  {item}
+                <div className="text-md font-outfit text-[#C0C0C0]">
+                  {user.music.map((item) => item).join(", ")}
                 </div>
               </div>
-            ))}
+            )}
+            {user.movies.length > 0 && (
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5">
+                <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
+                  🎬 Favorite Movies
+                </div>
+                <div className="text-md font-outfit text-[#C0C0C0]">
+                  {user.movies.map((item) => item).join(", ")}
+                </div>
+              </div>
+            )}
+            {user.places.length > 0 && (
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5">
+                <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
+                  📍 Favorite Places
+                </div>
+                <div className="text-md font-outfit text-[#C0C0C0]">
+                  {user.places.map((item) => item).join(", ")}
+                </div>
+              </div>
+            )}
+            {user.food.length > 0 && (
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5">
+                <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
+                  🍔 Favorite Foods
+                </div>
+                <div className="text-md font-outfit text-[#C0C0C0]">
+                  {user.food.map((item) => item).join(", ")}
+                </div>
+              </div>
+            )}
+            {user.hobbies.length > 0 && (
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5">
+                <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
+                  🎨 Hobbies
+                </div>
+                <div className="text-md font-outfit text-[#C0C0C0]">
+                  {user.hobbies.map((item) => item).join(", ")}
+                </div>
+              </div>
+            )}
+            {user.books.length > 0 && (
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-[#2C2C3C] to-[#2C2C3C] shadow-xl hover:shadow-[#FDF8F3]/20 hover:scale-[1.02] transition-all duration-300 mb-5">
+                <div className="text-xl font-outfit-bold mb-2 text-[#FDF8F3]">
+                  📚 Favorite Books
+                </div>
+                <div className="text-md font-outfit text-[#C0C0C0]">
+                  {user.books.map((item) => item).join(", ")}
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
         {/* Soft Accent Glow */}
         <div className="absolute -top-12 -right-10 w-40 h-40 bg-gradient-to-br from-pink-400/20 via-purple-400/20 to-blue-400/20 rounded-full blur-3xl"></div>
       </div>
-
-      {/* Divider Line */}
     </div>
   );
 }
