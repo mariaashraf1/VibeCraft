@@ -31,7 +31,7 @@ export default function MusicSection() {
         {categories[0].musicCategories.map((category, index) => (
           <button
             key={index}
-            className=" bg-[#FDF8F3] text-[#2C2C3C] font-outfit-semibold py-2 rounded-full hover:bg-[#7A9CAB] hoover:border-color:[#7A9CA] transition"
+            className=" bg-[#FDF8F3] text-[#2C2C3C] hover:text-[#FDF8F3] font-outfit-semibold py-2 rounded-full hover:bg-[#7A9CAB] hoover:border-color:[#7A9CA] transition"
           >
            {category}
           </button>
